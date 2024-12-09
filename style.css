@@ -1,0 +1,96 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 100px;
+    background-color: blanchedalmond;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.nav .logo h1{
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(118, 18, 18);
+}
+.nav .logo b{
+    color: rgb(225, 135, 24);
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul li{
+    margin-right: 30px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 750;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.nav ul .active::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: rgb(225, 135, 24);
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.content .content-left{
+    display: block;
+    width: 100%;
+}
+.content .content-left .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content .content-left .info h2{
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+}
+.content .content-left .info p{
+    font-size: 17px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+.content .content-left button{
+    padding: 10px 23px;
+    background-color: rgb(110, 83, 51);
+    color: azure;
+    border-radius: 5px;
+    box-shadow: rgb(49, 33, 0) 0px 20px 30px -10px;
+    border: none;
+    cursor: pointer;
+}
+.content .content-right{
+    display: block;
+    width: 100%;
+}
+.content .content-right img{
+    width: 570px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+}
